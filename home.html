@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Mogra&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href='css/style.css'>
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <title>Therese's Recipes</title>
+</head>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+<body>
+    <header>
+        <a class="skip" href="#welcome">Skip to Main content</a>
+        <h1>Therese's Recipes</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sourdough.html">Sourdough</a></li>
+                <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="info" id="welcome">
+                <h2>Hello! Welcome to Therese's Recipes. The one stop shop for all things that I love to cook and bake.
+                </h2>
+                <p>I started cooking in college, like many young adults do, as it is a necessary skill to nourish
+                    oneself
+                    day to day. I've always had a desire to eat delicious food, which is something I picked up from my
+                    parents. Together, we enjoy trying new restaurants in our hometown and wherever we travel, but
+                    nothing
+                    beats a home cooked meal. Growing up, it was my dad who made many of our indulgent meals with skills
+                    he
+                    picked up from watching his dad cook growing up, and the occasional YouTube tutorial. My mom is also
+                    a
+                    talented cook, creating meals that are yummy while also being rich in nutrients.</p>
+                <p>My parents always told me, "If you want to eat good food, you have to make it yourself."</p>
+                <p>My mother battled breast cancer while I was in undergrad. It was difficult and turbulent to say the
+                    least. It also caused me to revaluate what I'm putting in my body. Is it good for me? Could it hurt
+                    me?
+                    Of course, everything is good in moderation, but I wanted to minimize health risks as much as I
+                    could.
+                </p>
+                <p>So, I've spent A LOT of my early adulthood making food to enjoy. Many dishes sometimes felt more like
+                    experiments, and my knowledge on food and nutrition has expanded through my own research. I've had
+                    many
+                    successes and many failures. Each failure provided much insight I used to improve.</p>
+                <p>Now, I have a place to share everything I've learned. I hope you find something yummy here!</p>
+            </div>
+        </div>
+        <div class="photo_container">
+            <h2>Recipes Coming Soon...</h2>
+            <div class="food_images">
+                <a href="img/blondies.jpg" data-lightbox="Food" data-alt="Ginger Walnut Blondies"
+                    data-title="Ginger Walnut Blondies"> <img src="img/blondies.jpg" alt="Ginger Walnut Blondies"></a>
+                <a href="img/bananaoatcookie.jpg" data-lightbox="Food" data-alt="Banana Oatmeal Chocolate Chip Cookies"
+                    data-title="Banana Oatmeal Chocolate Chip Cookies">
+                    <img src="img/bananaoatcookie.jpg" alt="Banana Oatmeal Chocolate Chip Cookies"></a>
+                <a href="img/birthdaycake_withcandles.jpg" data-lightbox="Food data" data-alt="My first cake"
+                    data-title="Vanilla Cake with Berry Compote and Buttercream Frosting"> <img
+                        src="img/birthdaycake_withcandles.jpg" alt="My first cake"></a>
+                <a href="img/cookiedough.jpg" data-lightbox="Food" data-alt="Earl Grey Chocolate Chip Cookie Dough"
+                    data-title="Earl Grey Chocolate Chip Cookie Dough"><img src="img/cookiedough.jpg"
+                        alt="Earl Grey Chocolate Chip Cookie Dough"></a>
+                <a href="img/footballcupcakes.kpg.jpg" data-lightbox="Food" data-alt="Chocolate Football Cupcakes"
+                    data-title="Chocolate Football Cupcakes"> <img src="img/footballcupcakes.kpg.jpg"
+                        alt="Chocolate Football Cupcakes"></a>
+                <a href="img/matcha_chocchip.jpg" data-lightbox="Food" data-alt="Matcha Chocolate Chip Cookies"
+                    data-title="Matcha Chocolate Chip Cookies"> <img src="img/matcha_chocchip.jpg"
+                        alt="Matcha Chocolate Chip Cookies"></a>
+                <a href="img/mochimuffins_frosting.jpg" data-lightbox="Food" data-alt="Mochi Muffins with Frosting"
+                    data-title="Mochi Muffins with Frosting"> <img src="img/mochimuffins_frosting.jpg"
+                        alt="Mochi Muffins with Frosting"></a>
+                <a href="img/pancake.jpg" data-lightbox="Food" data-alt="Pancakes with fruit and yogurt on top"
+                    data-title="Pancakes with fruit and yogurt on top"><img src="img/pancake.jpg"
+                        alt="Pancakes with fruit and yogurt on top"></a>
+                <a href="img/ubewaffle.jpg" data-lightbox="Food" data-alt="Ube Waffles shapes like Texas"
+                    data-title="Ube Waffles shapes like Texas"> <img src="img/ubewaffle.jpg"
+                        alt="Ube Waffles shapes like Texas"></a>
+                <!-- <button class="carousel-prev">Previous</button>
+            <button class="carousel-next">Next</button> -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Therese Labordo | therese.labordo@gmail.com</p>
+        <p>© Copyrights <span id="year"></span> by Therese Labordo All rights reserved.</p>
+    </footer>
+</body>
+<script src="dist/js/lightbox-plus-jquery.min.js"></script>
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+    })
+</script>
+
+</html>
