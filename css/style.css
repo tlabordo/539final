@@ -1,0 +1,296 @@
+body {
+    font-family: "Funnel Sans", sans-serif;
+    background-color: white;
+    color: #011755;
+    line-height: normal;
+}
+
+header {
+    text-align: center;
+    background-color: #BBA8F4;
+    background-size: 100%;
+}
+
+header>h1 {
+    font-family: "Mogra", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    margin: 20px;
+    color: #011755;
+}
+
+header>img {
+    width: 100%;
+}
+
+p {
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Mogra", system-ui;
+    font-size: 32px;
+}
+
+h3{
+    font-family: "Mogra", system-ui;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.skip {
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: -40px;
+    left: 0;
+}
+
+.skip:focus {
+    top: 0;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    height: 25px;
+}
+
+.nav_links {
+    display: flex;
+    background-color: white;
+    padding: 10px 0;
+    flex-direction: column;
+}
+
+nav li {
+    /* display: flex; */
+    font-size: 12pt;
+    /* justify-content: space-around; */
+    margin: 5px;
+    border: #011755 solid;
+    padding: 15px;
+}
+
+nav a {
+    color: #011755;
+    font-family: "Mogra", system-ui;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/-1;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    border: 3px solid #011755;
+    border-radius: 15px;
+    background-color: white;
+    align-items: baseline;
+}
+
+.photo_container h2{
+    margin: 15px;
+}
+
+.tools {
+    margin: 5px;
+}
+
+.ingredients {
+    margin: 15px
+}
+
+.instructions {
+    margin: 5px;
+}
+
+.notes {
+    margin: 5px;
+}
+
+.tools li {
+    display: list-item;
+    list-style-position: inside;
+    padding-left: 4px;
+}
+
+.instructions li {
+    display: list-item;
+    list-style-position: inside;
+}
+
+.ingredients li {
+    display: list-item;
+    list-style-type: none;
+}
+
+.notes li {
+    display: list-item;
+    list-style-type: none;
+}
+
+.jump_to_recipe {
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 10px;
+}
+
+.recipe_card {
+    grid-column: 1/-1;
+}
+
+.recipe_card img {
+    width: 100%;
+}
+
+#sub_instructions li{
+    margin-left: 20px;
+}
+
+.food_images {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    /* centers items horizontally */
+    align-items: center;
+    /* centers items vertically */
+}
+
+/* .food_images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+} */
+
+.food_images img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/-1;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.info h2 {
+    text-align: center;
+    grid-column: 1/-1;
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+
+.info h3 {
+    padding-top: 5px;
+    grid-column: 1/-1;
+    font-weight: bold;
+}
+
+.info p {
+    grid-column: 1/-1;
+}
+
+
+footer {
+    display: grid;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #BBA8F4;
+}
+
+footer a {
+    color: #FFCB05;
+}
+
+footer p {
+    margin: 10px;
+    font-size: 10px;
+}
+
+
+@media screen and (min-width: 725px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .nav_links {
+        /* background-color: #00274C; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .info img {
+        width: 85%;
+    }
+
+
+    nav li {
+        background-color: white;
+    }
+
+    .food_images {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .food_images img {
+        width: 80%;
+    }
+
+    .container img {
+        width: 50%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+
+}
+@media print {
+    @page {
+      margin-left: 1in;
+      margin-right: 1in;
+      margin-top: 1in;
+      margin-bottom: 1in;
+    }
+    .container {
+        width: 800px;
+        margin: 0 auto;
+        border: none;
+    }
+    .container img{
+        display: none;
+    }
+    .nav_links{
+        display: none;
+    }
+    .jump_to_recipe{
+        display: none;
+    }
+ }
